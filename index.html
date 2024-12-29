@@ -6,16 +6,10 @@
       <base target="_top">
    </head>
    <body>
-      <script>
-    fetch('https://script.google.com/macros/s/YOUR_DEPLOYED_URL/exec')
-      .then(response => response.text()) // ใช้ .json() หากเนื้อหาเป็น JSON
-      .then(data => {
-        document.getElementById('script-output').innerHTML = data;
-      })
-      .catch(error => {
-        console.error('Error fetching data:', error);
-        document.getElementById('script-output').innerText = 'Failed to load data.';
-      });
-  </script>
+      <h1>Open Google Script App</h1>
+  <p>Click the link below to access the Google Script App:</p>
+  <a href="https://script.google.com/macros/s/YOUR_DEPLOYED_URL/exec" target="_blank">
+    Open Google Script App
+  </a>
    </body>
 </html>
